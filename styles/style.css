@@ -238,14 +238,9 @@
 .staff {
   padding: 100px 0 140px;
   background-image: url("../images/staff_picks_background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  color: #fff;
 }
 
 .staff__title {
@@ -253,6 +248,7 @@
   font-size: 44px;
   line-height: 52px;
   margin: 0 0 24px;
+  color: #f2f2f2;
 }
 
 .staff__subtitle {
@@ -261,10 +257,12 @@
   line-height: 30px;
   font-weight: 400;
   margin: 0;
+  color: #fff;
 }
 
 .all-card {
   margin: 68px 0 0 0;
+  padding: 0;
   max-width: 760px;
   display: flex;
   flex-wrap: wrap;
@@ -279,6 +277,8 @@
   width: 360px;
   height: 420px;
   list-style: none;
+  max-width: 760px;
+  display: flex;
 }
 
 .card__content {
@@ -286,6 +286,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .card__title {
@@ -293,6 +294,7 @@
   line-height: 30px;
   font-weight: 700;
   margin: 0;
+  font-style: italic;
 }
 
 .card__text {
@@ -312,6 +314,7 @@
   padding: 100px 0 140px;
   background-color: #f2f2f2;
   display: flex;
+  flex-direction: column;
 }
 
 .membership__title {
@@ -328,20 +331,14 @@
   padding: 0;
   margin: 100px 0 0;
   display: flex;
-  justify-content: space-around;
-
-  /*background-color: #2f80ed;*/
-  /* Agrega estilos */
+  justify-content: center;
+  column-gap: 40px;
 }
 
 .step {
-  width: 220px;
-  row-gap: 40px;
   display: flex;
+  flex-direction: column;
   flex-basis: 220px;
-
-  /*background-color: black;
-  /* Agrega estilos */
 }
 
 .step__title {
@@ -350,7 +347,6 @@
   line-height: 30px;
   font-weight: 700;
   display: flex;
-  align-items: center;
 }
 
 .step__icon {
@@ -374,11 +370,11 @@
 
 .about__title {
   margin: 0;
-  margin-right: 120px;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
+  max-width: 154px;
 }
 
 .about__content {
@@ -386,17 +382,16 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
-  flex-direction: column;
   z-index: 1;
 }
 
 .about__paragraph {
   margin-top: 0;
-  row-gap: 32px;
+  margin-bottom: 32px;
 }
 
 .about__paragraph:last-of-type {
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .about__circle {
@@ -410,44 +405,62 @@
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
   box-sizing: border-box;
-  background-color: #000000;
-  text-decoration: #fff;
-  font-size: 16px;
-  line-height: 20px;
+  background-color: #1f1f1f;
+  padding: 60px 80px;
 }
 
 .footer__columns {
-  margin: 60px 80px;
+  display: flex;
 }
 
 .footer__column_content_hours {
+  position: relative;
 }
 
 .footer__column_content_social {
+  position: relative;
+  text-align: center;
 }
 
 .footer__logo {
+  width: 57px;
+  height: 80px;
 }
 
 .footer__list {
-  /* El siguiente código elimina los estilos predeterminados del navegador para las listas */
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .footer__list-item {
+  line-height: 30px;
+  font-size: 10px;
+  font-weight: normal;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  color: #f2f2f2;
+  padding: 0%;
 }
 
 .footer__column-heading {
+  line-height: 30px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #f2f2f2;
+  margin-bottom: 20px;
 }
 
 .footer__column-link {
   color: white;
-  font-size: 16px;
+  font-size: 10px;
   line-height: 20px;
   text-decoration: none;
+  gap: 10;
 }
 
 .footer__column-link:hover {
@@ -455,6 +468,10 @@
 }
 
 .footer__social-icon {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__copyright {
