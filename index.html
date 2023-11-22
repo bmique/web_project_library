@@ -144,7 +144,7 @@
         <section class="staff" id="staff-link">
           <h2 class="staff__title">Preferidos de nuestro staff</h2>
           <p class="staff__subtitle">Que nuestros lectores y lectoras aman</p>
-          <ul class="all-card">
+          <ul class="staff__cards">
             <li class="card">
               <div class="card__content">
                 <h3 class="card__title">Introducción a los algoritmos</h3>
@@ -304,7 +304,11 @@
       <footer class="footer" id="contacts-link">
         <div class="footer__columns">
           <div class="footer__column footer__logo">
-            <img src="./images/logo-white.svg" />
+            <img
+              src="./images/logo-white.svg"
+              alt="logo Tripleten"
+              class="footer__logo"
+            />
           </div>
 
           <div class="footer__column footer__column_content_hours">
@@ -317,24 +321,31 @@
             </ul>
           </div>
 
-          <div class="footer__column footer__column_content_social">
+          <div
+            class="footer__column footer__column_content_social"
+            id="about-link"
+          >
             <h3 class="footer__column-heading">Redes Sociales</h3>
             <ul class="footer__list">
-              <li class="footer__list-item">
+              <li class="footer__column-link footer__list-item">
                 <img
                   class="footer__social-icon"
                   src="images/facebook_white.svg"
-                  alt="icono facebook"
+                  alt="icon facebook"
                 />
-                <a class="footer__column-link" href="#">Facebook</a>
+                <a class="footer__column-link footer__social-icon" href="#"
+                  >Facebook</a
+                >
               </li>
-              <li>
+              <li class="footer__column-link footer__list-item">
                 <img
                   class="footer__social-icon"
                   src="images/instagram_white.svg"
-                  alt="icono instagram"
+                  alt="icon instagram"
                 />
-                <a class="footer__column-link" href="#">Instagram</a>
+                <a class="footer__column-link footer__social-icon" href="#"
+                  >Instagram</a
+                >
               </li>
             </ul>
           </div>

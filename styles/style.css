@@ -44,7 +44,7 @@
   font-weight: bold;
 }
 
-.nave__link:hover {
+.nav__link:hover {
   color: #1f69c9;
 }
 
@@ -101,10 +101,6 @@
   justify-content: space-between;
   box-sizing: border-box;
   background-color: #f2f2f2;
-}
-
-.events:hover {
-  color: #1f69c9;
 }
 
 .events__content {
@@ -166,6 +162,10 @@
 .events__more {
   color: #2f80ed;
   text-decoration: none;
+}
+
+.events__more:hover {
+  color: #1f69c9;
 }
 
 .events__cover {
@@ -260,7 +260,7 @@
   color: #fff;
 }
 
-.all-card {
+.staff__cards {
   margin: 68px 0 0 0;
   padding: 0;
   max-width: 760px;
@@ -466,6 +466,8 @@
 .footer__social-icon {
   width: 16px;
   height: 16px;
+  text-decoration: none;
+  color: white;
 }
 
 .footer__copyright {
