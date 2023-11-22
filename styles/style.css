@@ -190,7 +190,7 @@
 
 .person_name_feynman {
   top: -30px;
-  right: 319px;
+  left: 319px;
 }
 
 .person_name_burbidge {
@@ -237,6 +237,15 @@
 
 .staff {
   padding: 100px 0 140px;
+  background-image: url("../images/staff_picks_background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
 
 .staff__title {
@@ -254,13 +263,22 @@
   margin: 0;
 }
 
-/* Agrega la regla CSS para tu nueva clase aquí. Asegúrate de colocarlo antes de .card:, los padres deben preceder a sus hijos */
+.all-card {
+  margin: 68px 0 0 0;
+  max-width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
 
 .card {
   background-color: #fff;
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
+  width: 360px;
+  height: 420px;
+  list-style: none;
 }
 
 .card__content {
@@ -293,6 +311,7 @@
 .membership {
   padding: 100px 0 140px;
   background-color: #f2f2f2;
+  display: flex;
 }
 
 .membership__title {
@@ -316,6 +335,9 @@
 }
 
 .step {
+  width: 220px;
+  row-gap: 40px;
+  display: flex;
   flex-basis: 220px;
 
   /*background-color: black;
@@ -347,6 +369,7 @@
   position: relative;
   box-sizing: border-box;
   display: flex;
+  gap: 120px;
 }
 
 .about__title {
@@ -356,7 +379,6 @@
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
-  max-width: 154px;
 }
 
 .about__content {
@@ -369,7 +391,8 @@
 }
 
 .about__paragraph {
-  margin-top: 32px;
+  margin-top: 0;
+  row-gap: 32px;
 }
 
 .about__paragraph:last-of-type {
@@ -388,9 +411,14 @@
 
 .footer {
   box-sizing: border-box;
+  background-color: #000000;
+  text-decoration: #fff;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .footer__columns {
+  margin: 60px 80px;
 }
 
 .footer__column_content_hours {
@@ -422,8 +450,13 @@
   text-decoration: none;
 }
 
+.footer__column-link:hover {
+  color: #c1c1c1;
+}
+
 .footer__social-icon {
 }
 
 .footer__copyright {
+  color: #fff;
 }
